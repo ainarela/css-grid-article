@@ -1,0 +1,67 @@
+.o-grid {
+    display: grid;
+    grid-template-columns: minmax(12px, 10vw) 1fr 190px 85px 70px 85px minmax(12px, 10vw);
+    grid-template-rows: 200px repeat(3, auto);
+}
+
+.o-grid__header {
+    grid-column: 2 / 7;
+    grid-row: 1 / 2;
+}
+
+.o-grid__intro {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.o-grid__title {
+    grid-column: 1 / 5;
+    grid-row: 3 / 4;
+    z-index: 1;
+}
+
+.o-grid__content {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+
+.o-grid__actionsbar {
+    grid-column: 3 / 4;
+    grid-row: 1 / -1;
+}
+
+.o-grid__action {
+    grid-column: 3 / 4;
+    align-self: center;
+    justify-self: center;
+}
+
+.o-grid__action--top {
+    grid-row: 2 / 3;
+}
+
+.o-grid__action--bottom {
+    grid-row: 4 / 5;
+}
+
+.o-grid__sidebar {
+    grid-column: 6 / 7;
+}
+
+.o-grid__sidebar--top {
+    grid-row: 2 / 3;
+}
+
+.o-grid__sidebar--center {
+    grid-row: 3 / 4;
+}
+
+.o-grid__sidebar--bottom {
+    grid-row: 4 / 5;
+}
+
+.o-grid__footnote {
+    grid-column: 6 / 7;
+    grid-row: 4 / 5;
+    justify-self: right;
+}

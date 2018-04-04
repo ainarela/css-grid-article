@@ -1,0 +1,24 @@
+.c-terms {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    justify-content: space-between;
+    padding: 0 10vw 4.375rem 0;
+}
+
+.c-terms__term {
+    padding-bottom: .5833em;
+}
+
+.c-terms__desc {
+    order: 1;
+    font-size: $font-size-m;
+    background-color: $light-grey;
+    font-weight: $font-bold;
+    margin: 0;
+    line-height: 4.444em;
+    width: 4.444em;
+    border-radius: 50%;
+    justify-self: center;
+    text-align: center;
+}

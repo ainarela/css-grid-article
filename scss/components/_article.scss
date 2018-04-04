@@ -1,0 +1,92 @@
+.c-article__text {
+    font-size: $font-size-s;
+    color: $grey;
+    margin: 0;
+}
+
+.c-article__title {
+    letter-spacing: .03em;
+    margin: 0;
+
+    + .c-article__text {
+        margin-top: 2.1428em;
+    }
+}
+
+.c-article__title--small {
+    font-size: $font-size-xl;
+    font-weight: $font-bold;
+}
+
+.c-article__title--large {
+    font-size: $font-size-xxxl;
+    font-weight: $font-black;
+}
+
+.c-article__title--main {
+    color: $white;
+    padding: .8461em 0 .8461em 10vw;
+    margin: .5384em 0;
+    background: transparent url(./../img/cactus.jpeg) no-repeat center center;
+    background-size: cover;
+}
+
+.c-article__actionsbar {
+    background-color: $black;
+}
+
+.c-article__action-link {
+    color: $white;
+    font-size: $font-size-s;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 1.25em;
+    box-sizing: border-box;
+    position: relative;
+    writing-mode: vertical-lr;
+
+    &::after {
+        content: "";
+        width: .07142em;
+        height: 1.75rem;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: $white;
+    }
+}
+
+.c-article__arrows {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.c-article__arrow-item {
+    + .c-article__arrow-item {
+        margin-top: .875rem;
+    }
+}
+
+.c-article__arrow-link {
+    width: 3.75rem;
+    height: 3.75rem;
+    border: .125rem solid $black;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-article__arrow {
+    width: .625rem;
+    height: auto;
+}
+
+.c-article__page-number {
+    font-size: $font-size-xxl;
+    font-weight: $font-bold;
+}
